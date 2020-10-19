@@ -1,8 +1,10 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+/*Se fija el tamañod de las imágenes*/ 
+.imagenesCarousel{
+  width: 45%;
+  height: 45%;
+  display:block;
+  margin:auto;
 }
 
-a {
-  color: #00B7FF;
-}
+
+
