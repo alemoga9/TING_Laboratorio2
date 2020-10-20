@@ -7,9 +7,9 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
-// Ruta servicios
+// Ruta servicios y db
 var serviciosRouter = require('./routes/servicios');
-
+var dbRouter = require('./routes/db');
 //
 
 var app = express();
@@ -29,6 +29,7 @@ app.use('/users', usersRouter);
 
 //
 app.use('/servicios', serviciosRouter);
+app.use('/db', dbRouter);
 //
 
 // catch 404 and forward to error handler
