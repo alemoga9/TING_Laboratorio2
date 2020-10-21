@@ -52,14 +52,13 @@
       <th>Correo</th>
       <th>Contraseña</th>
     </tr>
+    <% results.forEach(function(r) { %>
     <tr>
-      <% results.forEach(function(r) { %>
         <td><%= r.usuario %></td>
         <td><%= r.correo %></td>
         <td><%= r.contrasena %></td>
-      <% }); %>
     </tr>
-
+    <% }); %>
   </table>
 
 </body>
