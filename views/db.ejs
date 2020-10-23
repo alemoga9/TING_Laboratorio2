@@ -55,7 +55,7 @@
     <% results.forEach(function(r) { %>
     <tr>
         <td><%= r.usuario %></td>
-        <td><%= r.correo %></td>
+        <td><a href="mailto:"<%= r.correo %>><%= r.correo %></a></td>
         <td><%= r.contrasena %></td>
     </tr>
     <% }); %>
